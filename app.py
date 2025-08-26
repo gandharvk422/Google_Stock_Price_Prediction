@@ -51,16 +51,6 @@ def build_and_load_model():
 # Load datasets
 dataset_train, dataset_test = load_data()
 
-col1, col2 = st.columns(2)
-
-with col1:
-    st.subheader("Training Dataset")
-    st.write(dataset_train)
-
-with col2:
-    st.subheader("Test Dataset")
-    st.write(dataset_test)
-
 # Preprocess data
 X_train, y_train, X_test, sc = preprocess_data(dataset_train, dataset_test)
 
@@ -123,5 +113,6 @@ if st.button("Predict Future Stock Price"):
 # Display created by statement at the bottom
 st.markdown("---")
 st.markdown("##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Created by [Gandharv Kulkarni](https://share.streamlit.io/user/gandharvk422)")
+
 
 st.markdown("&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[![GitHub](https://img.shields.io/badge/GitHub-100000?style=the-badge&logo=github&logoColor=white&logoBackground=white)](https://github.com/gandharvk422) &emsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gandharvk422) &emsp; [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/gandharvk422)")
