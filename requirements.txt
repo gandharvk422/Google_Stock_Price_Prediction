@@ -5,4 +5,5 @@ matplotlib
 scikit-learn
 keras
 tensorflow
+plotly
 joblib
